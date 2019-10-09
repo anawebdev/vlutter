@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 15 15" version="1.1">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Exclamation_Circular</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M1.39,6.92302326 C2.15201846,6.92249648 2.77178286,6.30897432 2.78,5.547 L2.78,1.376 C2.77841334,1.00912144 2.63101035,0.657929981 2.37027587,0.399821611 C2.1095414,0.14171324 1.75687583,-0.00212720516 1.39,-2.32623021e-05 C0.627981537,0.000503515098 0.00821714453,0.614025676 0,1.376 L0,5.547 C0.00158666376,5.91387856 0.148989654,6.26507002 0.409724127,6.52317839 C0.6704586,6.78128676 1.02312417,6.92512721 1.39,6.92302326 Z M1.404,7.674 C0.637236087,7.67619704 0.0161970448,8.29723609 0.014,9.064 C0.0161970448,9.83076391 0.637236087,10.451803 1.404,10.454 C2.17076391,10.451803 2.79180296,9.83076391 2.794,9.064 C2.79179534,8.29567762 2.16832555,7.674 1.4,7.674 L1.404,7.674 Z" id="path-1"/>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="User-Interface/Status-Nodes/Error">
+            <g id="Exclamation_Circular">
+                <circle id="Oval-2" fill="#FF3E81" cx="7.5" cy="7.5" r="7.5"/>
+                <g id="Group_1749" transform="translate(6.000000, 2.000000)">
+                    <g id="Group_1738-2-Clipped">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"/>
+                        </mask>
+                        <g id="Path_540"/>
+                        <g id="Group_1738-2" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="nonzero">
+                            <g transform="translate(-1.000000, -1.000000)" id="Path_539-2">
+                                <polygon points="0.305 0.305 4.49 0.305 4.49 12.15 0.305 12.15"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="121.5" height="66.75" viewBox="0 0 121.5 66.75">
+  <defs>
+    <filter id="Ellipse_11" x="53.25" y="0" width="15" height="15" filterUnits="userSpaceOnUse">
+      <feOffset dy="1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="0.5" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Gruppe_797" data-name="Gruppe 797" transform="translate(-39.25 -521.5)">
+    <g id="Gruppe_429" data-name="Gruppe 429" transform="translate(-143 394)">
+      <rect id="Rechteck_387" data-name="Rechteck 387" width="34" height="34" rx="8" transform="translate(226 157)" fill="#49b2ae"/>
+      <circle id="Ellipse_10" data-name="Ellipse 10" cx="4.533" cy="4.533" r="4.533" transform="translate(238.467 159.833)" fill="#fff"/>
+      <g id="Pfad_570" data-name="Pfad 570" transform="matrix(0.839, 0.545, -0.545, 0.839, 244.755, 160.923)" fill="#fff">
+        <path d="M.572,0l.561,4.027H0Z" stroke="none"/>
+        <path d="M 0.5719767212867737 4.76837158203125e-06 L 1.133336663246155 4.026704788208008 L -3.218650817871094e-06 4.026704788208008 L 0.5719767212867737 4.76837158203125e-06 Z" stroke="none" fill="#49b2ae"/>
+      </g>
+    </g>
+    <path id="Oval" d="M120,60A60,60,0,1,0,0,60" transform="translate(40 527.5)" fill="none" stroke="#8a878d" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" opacity="0.5"/>
+    <path id="Oval-2" data-name="Oval" d="M102,17.154a59.944,59.944,0,0,0-75.246-7.111,61.056,61.056,0,0,0-9.19,7.537" transform="translate(40.5 527.5)" fill="none" stroke="#49b2ae" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="5"/>
+    <g transform="matrix(1, 0, 0, 1, 39.25, 521.5)" filter="url(#Ellipse_11)">
+      <g id="Ellipse_11-2" data-name="Ellipse 11" transform="translate(54.75 0.5)" fill="#49b2ae" stroke="#fff" stroke-width="1">
+        <circle cx="6" cy="6" r="6" stroke="none"/>
+        <circle cx="6" cy="6" r="5.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

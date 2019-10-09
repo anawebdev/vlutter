@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="15px" viewBox="0 0 12 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Download Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="16" height="16"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Results/Heading/Yes-worms/Single" transform="translate(-317.000000, -13.000000)">
+            <g id="Download-Icon" transform="translate(303.000000, 0.000000)">
+                <rect id="Rectangle_13" fill-rule="nonzero" x="0" y="0" width="40" height="40" rx="4"></rect>
+                <g id="Icons_Misc_Person_Outlined" transform="translate(12.000000, 12.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Rectangle_9_Copy_33"></g>
+                    <polygon id="Rectangle_9-8" fill="#49B2AE" fill-rule="nonzero" mask="url(#mask-2)" points="4.66267782 6.54532218 3.44362573 8.25227795 8.008 11.5127473 12.5723743 8.25227795 11.3533222 6.54532218 8.008 8.934636"></polygon>
+                    <polygon id="Line_2" fill="#49B2AE" fill-rule="nonzero" mask="url(#mask-2)" points="2.4 15.4 13.6 15.4 13.6 13.4 2.4 13.4"></polygon>
+                    <polygon id="Line-4" fill="#49B2AE" fill-rule="nonzero" mask="url(#mask-2)" points="6.5 1.7 6.5 10.3 9.5 10.3 9.5 1.7"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

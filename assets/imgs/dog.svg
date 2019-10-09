@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="142" height="138.5" viewBox="0 0 142 138.5">
+  <defs>
+    <clipPath id="clip-path">
+      <ellipse id="Mask" cx="71" cy="69" rx="71" ry="69" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_1420" data-name="Gruppe 1420" transform="translate(-206 -415)">
+    <g id="Gruppe_1417" data-name="Gruppe 1417" transform="translate(121 415)">
+      <g id="image" transform="translate(85)">
+        <path id="Mask-2" data-name="Mask" d="M71,0c39.212,0,71,30.892,71,69s-31.788,69-71,69S0,107.108,0,69,31.788,0,71,0Z" transform="translate(0 0.5)" fill="none"/>
+      </g>
+    </g>
+    <path id="newprofile_dog_circle" d="M683.672,269.872c.491-1.378.927-2.422,3.7-20.332a259.119,259.119,0,0,0,2.475-36.025c17.066-.322,25.9-12.741,27.756-30.353a4.333,4.333,0,0,0-1.021-3.2,4.056,4.056,0,0,0-2.982-1.424L695.136,180.4l-.716-.367c-2.623-5.283-9.1-9.052-16.725-9.2l-6.5-11.21c-.7-1.5-1.5-2.426-3.134-2.373a3.214,3.214,0,0,0-2.946,2.686c-.313,1.334.573,11.9.573,11.9l-8.1-10.234a3.371,3.371,0,0,0-4.065-1.513c-1.683.564-1.961,1.791-1.961,3.581,0,0,3.581,54.411-2.588,66.615-3.356,6.639-17.258,7.478-32.319,7.444" transform="translate(-399.155 282.752)" fill="none" stroke="#999" stroke-linejoin="round" stroke-width="2" opacity="0.27"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg id="license" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 19.2">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c6c6c6;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #c6c6c6;
+        stroke-width: 0.7px;
+      }
+    </style>
+  </defs>
+  <path id="Shape" class="cls-1" d="M15.6,1.2H1.2C.538,1.2,0,.931,0,.6S.538,0,1.2,0H15.6c.662,0,1.2.269,1.2.6S16.263,1.2,15.6,1.2Z" transform="translate(3.6 13.2)"/>
+  <path id="Shape-2" data-name="Shape" class="cls-2" d="M3,6A3,3,0,0,1,.879.879,3,3,0,0,1,5.122,5.122,2.981,2.981,0,0,1,3,6ZM3,.316A2.684,2.684,0,1,0,5.684,3,2.688,2.688,0,0,0,3,.316Z" transform="translate(3.6 3.6)"/>
+  <g id="Group_414" data-name="Group 414">
+    <path id="Shape-3" data-name="Shape" class="cls-1" d="M22.2,19.2H1.8A1.8,1.8,0,0,1,0,17.4V1.8A1.8,1.8,0,0,1,1.8,0H22.2A1.8,1.8,0,0,1,24,1.8V17.4A1.8,1.8,0,0,1,22.2,19.2ZM1.8,1.2a.6.6,0,0,0-.6.6V17.4a.6.6,0,0,0,.6.6H22.2a.6.6,0,0,0,.6-.6V1.8a.6.6,0,0,0-.6-.6Z" transform="translate(0 0)"/>
+    <path id="Shape-4" data-name="Shape" class="cls-1" d="M7.8,1.2H.6A.6.6,0,0,1,.6,0H7.8a.6.6,0,1,1,0,1.2Z" transform="translate(12 3.6)"/>
+    <path id="Shape-5" data-name="Shape" class="cls-1" d="M7.8,1.2H.6A.6.6,0,0,1,.6,0H7.8a.6.6,0,1,1,0,1.2Z" transform="translate(12 8.4)"/>
+    <path id="Shape-6" data-name="Shape" class="cls-1" d="M7.8,1.2H.6A.6.6,0,0,1,.6,0H7.8a.6.6,0,1,1,0,1.2Z" transform="translate(12 13.2)"/>
+    <path id="Shape-7" data-name="Shape" class="cls-1" d="M7.8,1.2H.6A.6.6,0,0,1,.6,0H7.8a.6.6,0,1,1,0,1.2Z" transform="translate(3.6 13.2)"/>
+  </g>
+</svg>

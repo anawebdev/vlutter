@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="12px" viewBox="0 0 7 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Buttons/Segments/Back</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="25" height="25"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Wormtest-Header-Old" transform="translate(-29.000000, -17.000000)">
+            <g id="Group-2">
+                <g id="Buttons/Segments/Arrow/Back" transform="translate(20.000000, 10.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Rectangle_1" fill="#FFFFFF" fill-rule="nonzero" opacity="0" xlink:href="#path-1"></use>
+                    <path d="M11.4298493,12.7502494 L15.2159113,8.74931831 C15.3986194,8.55723936 15.5,8.29980919 15.5,8.03361117 C15.5,7.76741316 15.3986194,7.50998299 15.21458,7.31650081 C15.0278809,7.11710283 14.7620298,7 14.4818075,7 C14.2015851,7 13.9357341,7.11710283 13.7450259,7.32074861 L9.28405993,12.0353992 C9.10138062,12.2274477 9,12.4848779 9,12.7510759 C9,13.0172739 9.10138062,13.2747041 9.28542003,13.4681863 L13.7461144,18.1821577 C13.9349003,18.3818901 14.1966695,18.4977042 14.4730747,18.4999873 C14.7588994,18.5013953 15.0278471,18.3824052 15.2190362,18.1750057 C15.395058,17.9900855 15.4964386,17.7326554 15.4964386,17.4664574 C15.4964386,17.2002593 15.395058,16.9428292 15.2110186,16.749347 L11.4298493,12.7502494 Z" id="Path" fill="#49B2AE" fill-rule="evenodd" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 15 15" version="1.1">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Checkmark_Circular</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="User-Interface/Status-Nodes/Check">
+            <g id="Checkmark_Circular">
+                <circle id="Oval-2" fill="#49B2AE" cx="7.5" cy="7.5" r="7.5"/>
+                <polyline id="Rectangle_9-2" stroke="#FFFFFF" stroke-width="2.00039996" stroke-linecap="round" stroke-linejoin="round" transform="translate(7.457791, 7.138628) rotate(38.015660) translate(-7.457791, -7.138628) " points="8.44448875 4 8.91558294 10.2772551 6 10.2362469"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="142" height="138.5" viewBox="0 0 142 138.5">
+  <defs>
+    <clipPath id="clip-path">
+      <ellipse id="Mask" cx="71" cy="69" rx="71" ry="69" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_1418" data-name="Gruppe 1418" transform="translate(-206 -415)">
+    <g id="newprofile_cat_circle" transform="translate(137.22 194.361)" opacity="0.27">
+      <path id="Pfad_2142" data-name="Pfad 2142" d="M845.79,257.636c-10.461-6.978-20.769-12.516-23.2-19.157-5.375-14.66-1-19.26-3.791-27.053s-6.984-9.546-6.984-9.546c-2.266-23.169-12.916-21.2-12.916-21.2l-4.381,16.564c-3.791-15.073-12.865-15.646-12.865-15.646v19.437c-6.353,1.213-12.772,12.056-13.548,15.165-1.163,4.71-6.15,4.861-7.861,9.268s7.279,17.507,10.3,18.476,14.71-.4,17.549.615-6.5,24.028-5.35,30.853c.2,1.215.58,3.388,1.1,6.443" transform="translate(-652.484 75.5)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Pfad_2144" data-name="Pfad 2144" d="M767.494,242.53A42.024,42.024,0,0,0,752,248.36" transform="translate(-651.22 65.753)" fill="none" stroke="#999" stroke-linecap="round" stroke-width="2"/>
+      <path id="Pfad_2145" data-name="Pfad 2145" d="M770.648,245.38c-7.313,4.55-10.708,12.537-10.708,12.537" transform="translate(-652.47 65.304)" fill="none" stroke="#999" stroke-linecap="round" stroke-width="2"/>
+      <path id="Pfad_2146" data-name="Pfad 2146" d="M775.225,247.44a51.016,51.016,0,0,0-1.264,14.87" transform="translate(-654.663 64.98)" fill="none" stroke="#999" stroke-linecap="round" stroke-width="2"/>
+    </g>
+    <g id="Gruppe_1417" data-name="Gruppe 1417" transform="translate(121 415)">
+      <g id="image" transform="translate(85)">
+        <path id="Mask-2" data-name="Mask" d="M71,0c39.212,0,71,30.892,71,69s-31.788,69-71,69S0,107.108,0,69,31.788,0,71,0Z" transform="translate(0 0.5)" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

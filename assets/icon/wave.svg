@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375px" height="72px" viewBox="0 0 375 72" version="1.1">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Rectangle_430</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,3.11544431 C7.056188,-0.830803823 21.2228547,0.483108845 42.5,7.05718232 C103.226512,25.8200634 171.984044,20.5916755 200.590785,12.6040568 C238.685266,1.96725624 296.821671,-1.9370973 375,0.890996173 L375,72 L0,72 L0,3.11544431 Z" id="path-1"/>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tell-a-friend" fill-rule="nonzero">
+            <g id="Rectangle_430">
+                <g transform="translate(187.500000, 36.000000) scale(-1, 1) translate(-187.500000, -36.000000) ">
+                    <use fill="#FFFFFF" xlink:href="#path-1"/>
+                    <use fill="#49B2AE" xlink:href="#path-1"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

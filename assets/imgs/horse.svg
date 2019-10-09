@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="142" height="138.5" viewBox="0 0 142 138.5">
+  <defs>
+    <clipPath id="clip-path">
+      <ellipse id="Mask" cx="71" cy="69" rx="71" ry="69" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_1421" data-name="Gruppe 1421" transform="translate(-206 -415)">
+    <g id="Gruppe_1417" data-name="Gruppe 1417" transform="translate(121 415)">
+      <g id="image" transform="translate(85)">
+        <path id="Mask-2" data-name="Mask" d="M71,0c39.212,0,71,30.892,71,69s-31.788,69-71,69S0,107.108,0,69,31.788,0,71,0Z" transform="translate(0 0.5)" fill="none"/>
+      </g>
+    </g>
+    <g id="newprofile_horse_circle" transform="translate(4808.354 6749.5)" opacity="0.27">
+      <path id="Pfad_2159" data-name="Pfad 2159" d="M1007.33,173.031c1.466-3.189,3.259-5.893,3.288-6.779.295-9.158-7.462-26.663-8.15-47.993" transform="translate(-5527.376 -6370.985)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      <path id="Pfad_2160" data-name="Pfad 2160" d="M1003.58,94.955c2,8.126-4.808,13.106-11.525,18.914-5.619,4.841-6.643,5.668-8.92,8.9s-1.049,6.283-5.578,9.076-12-.311-14.178-6.6,3.276-19.307,3.276-19.307,4.03-6.692.762-15.817c-1.532-4.284,1.933-11.279,5.5-16.874v-.262c-1.638-3.948-7.945-5.562-8.052-14.089l13.409,8.191,1.9-1.081L976.9,52s10.288,4.759,10.935,12.746c21.681-5.12,43.224,13.925,59.122,34.485a192.92,192.92,0,0,0,12.955,15.228" transform="translate(-5525.22 -6359)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>

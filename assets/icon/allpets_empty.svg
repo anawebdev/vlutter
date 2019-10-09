@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="142" height="138.566" viewBox="0 0 142 138.566">
+  <defs>
+    <clipPath id="clip-path">
+      <ellipse id="Mask" cx="71" cy="69" rx="71" ry="69" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Gruppe_1416" data-name="Gruppe 1416" transform="translate(-134 -417)">
+    <g id="Gruppe_1414" data-name="Gruppe 1414">
+      <path id="Pfad_2158" data-name="Pfad 2158" d="M651.539,200.853a113.508,113.508,0,0,0,1.282-15.794c8.433-.159,12.8-6.3,13.717-15a2.142,2.142,0,0,0-.5-1.58,2,2,0,0,0-1.473-.7l-9.124.92-.354-.181c-1.3-2.611-4.5-4.473-8.265-4.544l-3.212-5.54c-.345-.739-.739-1.2-1.549-1.173a1.588,1.588,0,0,0-1.456,1.327c-.155.659.283,5.88.283,5.88l-4-5.057a1.666,1.666,0,0,0-2.009-.748c-.832.279-.969.885-.969,1.77,0,0,1.071,16.275.082,26.641" transform="translate(-481.815 344.5)" fill="none" stroke="#999" stroke-linejoin="round" stroke-width="2" opacity="0.27"/>
+      <g id="Gruppe_1412" data-name="Gruppe 1412" transform="translate(91.396 269.27)" opacity="0.27">
+        <path id="Pfad_2142" data-name="Pfad 2142" d="M789.169,207.372c-2.8-1.8-5.474-3.527-6.207-5.526-1.971-5.375-.368-7.061-1.39-9.919s-2.561-3.5-2.561-3.5c-.831-8.495-4.735-7.772-4.735-7.772l-1.606,6.073c-1.39-5.526-4.717-5.736-4.717-5.736v7.126c-2.329.445-4.683,4.42-4.967,5.56-.426,1.727-2.255,1.782-2.882,3.4s2.669,6.419,3.775,6.774,5.393-.145,6.434.225c.56.2-.172,2.734-.983,5.72" transform="translate(-656.766 75.5)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Pfad_2144" data-name="Pfad 2144" d="M757.681,242.53A15.407,15.407,0,0,0,752,244.668" transform="translate(-651.22 32.728)" fill="none" stroke="#999" stroke-linecap="round" stroke-width="2"/>
+        <path id="Pfad_2145" data-name="Pfad 2145" d="M763.866,245.38a11.207,11.207,0,0,0-3.926,4.6" transform="translate(-656.707 30.758)" fill="none" stroke="#999" stroke-linecap="round" stroke-width="2"/>
+        <path id="Pfad_2146" data-name="Pfad 2146" d="M774.363,247.44a18.7,18.7,0,0,0-.463,5.452" transform="translate(-666.33 29.335)" fill="none" stroke="#999" stroke-linecap="round" stroke-width="2"/>
+      </g>
+      <g id="Gruppe_1413" data-name="Gruppe 1413" transform="translate(4790.153 6796.238)" opacity="0.27">
+        <path id="Pfad_2159" data-name="Pfad 2159" d="M1004.732,143.8a28.434,28.434,0,0,0,1.533-3.161c.138-4.27-3.479-12.432-3.8-22.377" transform="translate(-5547.362 -6399.954)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+        <path id="Pfad_2160" data-name="Pfad 2160" d="M981.847,72.028c.932,3.789-2.242,6.111-5.374,8.819-2.62,2.257-3.1,2.643-4.159,4.151s-.489,2.929-2.6,4.232-5.6-.145-6.611-3.078,1.528-9,1.528-9a9.089,9.089,0,0,0,.355-7.375c-.714-2,.9-5.259,2.567-7.868v-.122c-.764-1.841-3.7-2.593-3.754-6.569l6.252,3.819.886-.5L969.408,52s4.8,2.219,5.1,5.943c10.11-2.387,20.154,6.493,27.568,16.079.425.55.848,1.087,1.466,1.858" transform="translate(-5525.22 -6359)" fill="none" stroke="#999" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+      </g>
+    </g>
+    <g id="Gruppe_1410" data-name="Gruppe 1410" transform="translate(49 417)">
+      <g id="image" transform="translate(85)">
+        <path id="Mask-2" data-name="Mask" d="M71,0c39.212,0,71,30.892,71,69s-31.788,69-71,69S0,107.108,0,69,31.788,0,71,0Z" transform="translate(0 0.5)" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>
