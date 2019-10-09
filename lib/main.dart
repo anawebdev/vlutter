@@ -5,10 +5,10 @@ import "dart:math";
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Vlutter();
-  }
+    @override
+    Widget build(BuildContext context) {
+        return Vlutter();
+    }
 }
 
 final grey = Colors.grey[300];
@@ -56,8 +56,8 @@ class _VlutterState extends State<Vlutter> with SingleTickerProviderStateMixin {
                             pageSnapping: true,
                             controller: pageController,
                             children: [
-                                DashboardCardPadded(animation),
-                                DashboardCardPadded(animation),
+                                DashboardCardPadded(animation: animation),
+                                DashboardCardPadded(animation: animation),
                             ],
                             onPageChanged: (pageIndex) {
                                 animController.reset();
@@ -72,7 +72,7 @@ class _VlutterState extends State<Vlutter> with SingleTickerProviderStateMixin {
 }
 
 class DashboardCardPadded extends AnimatedWidget {
-    DashboardCardPadded(Animation animation) : super(key: UniqueKey(), listenable: animation);
+    DashboardCardPadded({Key key, Animation animation}) : super(key: key, listenable: animation);
 
     Animation get animation => listenable;
 
@@ -81,7 +81,7 @@ class DashboardCardPadded extends AnimatedWidget {
         return ListView(
             children: [
                 SizedBox(height: 50),
-                DashboardCard(animation),
+                DashboardCard(animation: animation),
                 SizedBox(height: 15),
             ],
         );
@@ -90,7 +90,7 @@ class DashboardCardPadded extends AnimatedWidget {
 
 class DashboardCard extends AnimatedWidget {
 
-    DashboardCard(Animation animation) : super(key: UniqueKey(), listenable: animation);
+    DashboardCard({Key key, Animation animation}) : super(key: key, listenable: animation);
 
     Animation get animation => listenable;
 
@@ -132,36 +132,36 @@ class DashboardCard extends AnimatedWidget {
                                     Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
-                                            Thingy(0.6, animation),
-                                            Thingy(0.7, animation),
-                                            Thingy(0.25, animation),
+                                            Thingy(percentage: 0.6, animation: animation),
+                                            Thingy(percentage: 0.7, animation: animation),
+                                            Thingy(percentage: 0.25, animation: animation),
                                         ],
                                     ),
                                     horizontalDivider,
                                     Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
-                                            Thingy(0.3, animation),
-                                            Thingy(0.9, animation),
-                                            Thingy(1.0, animation),
+                                            Thingy(percentage: 0.3, animation: animation),
+                                            Thingy(percentage: 0.9, animation: animation),
+                                            Thingy(percentage: 1.0, animation: animation),
                                         ],
                                     ),
                                     horizontalDivider,
                                     Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
-                                            Thingy(0.3, animation),
-                                            Thingy(0.9, animation),
-                                            Thingy(1.0, animation),
+                                            Thingy(percentage: 0.3, animation: animation),
+                                            Thingy(percentage: 0.9, animation: animation),
+                                            Thingy(percentage: 1.0, animation: animation),
                                         ],
                                     ),
                                     horizontalDivider,
                                     Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
-                                            Thingy(0.3, animation),
-                                            Thingy(0.9, animation),
-                                            Thingy(1.0, animation),
+                                            Thingy(percentage: 0.3, animation: animation),
+                                            Thingy(percentage: 0.9, animation: animation),
+                                            Thingy(percentage: 1.0, animation: animation),
                                         ],
                                     ),
                                 ],
@@ -191,7 +191,7 @@ class DashboardCard extends AnimatedWidget {
 }
 
 class Thingy extends AnimatedWidget {
-    Thingy(this.percentage, Animation animation) : super(key: UniqueKey(), listenable: animation);
+    Thingy({Key key, this.percentage, Animation animation}) : super(key: key, listenable: animation);
 
     Animation get animation => listenable;
     final double percentage;
@@ -229,23 +229,23 @@ class Thingy extends AnimatedWidget {
 }
 
 class Arc extends CustomPainter {
-  double maxFill;
-  double fill;
+    double maxFill;
+    double fill;
 
-  Arc(this.maxFill, this.fill);
+    Arc(this.maxFill, this.fill);
 
-  @override
-  void paint(Canvas canvas, Size size) {
-    final rect = Offset.zero & size;
-    final paint = Paint()
-        ..color = Colors.pink
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 3
-        ..strokeCap = StrokeCap.round;
+    @override
+    void paint(Canvas canvas, Size size) {
+        final rect = Offset.zero & size;
+        final paint = Paint()
+            ..color = Colors.pink
+            ..style = PaintingStyle.stroke
+            ..strokeWidth = 3
+            ..strokeCap = StrokeCap.round;
 
-    canvas.drawArc(rect, 0, 2 * pi * maxFill * fill, false, paint);
-  }
+        canvas.drawArc(rect, 0, 2 * pi * maxFill * fill, false, paint);
+    }
 
-  @override
-  bool shouldRepaint(Arc oldDelegate) => true;
+    @override
+    bool shouldRepaint(Arc oldDelegate) => true;
 }
