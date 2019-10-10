@@ -1,3 +1,3 @@
 # vlutter
 
-vetevo's Flutter playgorund. One day, this will be our app.
+vetevo's Flutter playground. One day, this will be our app.
