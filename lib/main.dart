@@ -1,11 +1,18 @@
 import "package:flutter/material.dart";
+import "utils/colors.dart";
 import "screens/dashboard.dart";
+import "screens/login.dart";
 
-void main() => runApp(Vlutter());
-
-class Vlutter extends StatelessWidget {
-    @override
-    Widget build(BuildContext context) {
-        return DashboardScreen();
-    }
+void main() {
+  runApp(MaterialApp(
+    title: 'Vetevo App',
+    theme: ThemeData(
+      primaryColor: PrimaryColor,
+    ),
+    initialRoute: '/',
+    routes: {
+      '/': (context) => LoginScreen(),
+      '/dashboard': (context) => DashboardScreen()
+    },
+  ));
 }
