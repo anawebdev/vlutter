@@ -1,6 +1,9 @@
-import "package:flutter/material.dart";
+import 'package:flutter/cupertino.dart';
+import 'package:flutter_datetime_picker/flutter_datetime_picker.dart';
 import "dart:ui";
 import "dart:math";
+
+import "package:flutter/material.dart";
 
 class AnimalInfo {
   final String name;
@@ -15,8 +18,7 @@ class DashboardScreen extends StatefulWidget {
   _VlutterState createState() => _VlutterState();
 }
 
-class _VlutterState extends State<DashboardScreen>
-    with SingleTickerProviderStateMixin {
+class _VlutterState extends State<DashboardScreen> with SingleTickerProviderStateMixin {
   AnimationController animController;
   Animation animation;
   bool animationForward = true;
@@ -278,19 +280,18 @@ class Thingy extends AnimatedWidget {
             ),
           ),
           Padding(
-              padding: EdgeInsets.only(top: 15),
-              child: Column(
-                children: <Widget>[
-                  Text("Impfung",
+            padding: EdgeInsets.only(top: 15),
+            child: Column(children: <Widget>[
+              Text("Impfung",
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.display1),
-                  Padding(
+                      Padding(
                       padding: EdgeInsets.only(top: 5),
                       child: Text("Jetzt eintragen",
                           textAlign: TextAlign.center,
                           style: Theme.of(context).textTheme.display2))
-                ],
-              )),
+            ],)
+          ),
         ],
       ),
     );
@@ -313,12 +314,112 @@ class AddCard extends StatelessWidget {
           children: <Widget>[
             FlatButton(
               child: const Text('Add animal'),
-              onPressed: () {/* ... */},
+              onPressed: () {
+                Navigator.push(context,
+                    CupertinoPageRoute(builder: (context) => AddAnimalPage()));
+              },
             ),
           ],
         ),
       ),
     ])));
+  }
+}
+
+class AddAnimalPage extends StatelessWidget {
+  final _formKey = GlobalKey<FormState>();
+  String _date = "Not set";
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(title: Text('Add pet')),
+        body: Container(
+            child: Builder(
+                builder: (context) => Form(
+                    key: _formKey,
+                    child: Container(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 16.0, horizontal: 16.0),
+                      child: Column(children: <Widget>[
+                        Padding(
+                          padding: EdgeInsets.only(bottom: 15),
+                          child: TextFormField(
+                            decoration: const InputDecoration(
+                              icon: Icon(Icons.pets),
+                              hintText: 'What the name of your pet',
+                              labelText: 'Name *',
+                            ),
+                            onSaved: (String value) {
+                              print('name $value');
+                            },
+                          ),
+                        ),
+                        RaisedButton(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5.0)),
+                          elevation: 4.0,
+                          onPressed: () {
+                            DatePicker.showDatePicker(context,
+                                theme: DatePickerTheme(
+                                  containerHeight: 210.0,
+                                ),
+                                showTitleActions: true,
+                                minTime: DateTime(2000, 1, 1),
+                                maxTime: DateTime(2022, 12, 31),
+                                onConfirm: (date) {
+                              print('confirm $date');
+                              _date =
+                                  '${date.year} - ${date.month} - ${date.day}';
+                              // setState();
+                            },
+                                currentTime: DateTime.now(),
+                                locale: LocaleType.en);
+                          },
+                          child: Container(
+                            alignment: Alignment.center,
+                            height: 50.0,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                Row(
+                                  children: <Widget>[
+                                    Container(
+                                      child: Row(
+                                        children: <Widget>[
+                                          Icon(
+                                            Icons.date_range,
+                                            size: 18.0,
+                                            color: Colors.teal,
+                                          ),
+                                          Text(
+                                            " $_date",
+                                            style: TextStyle(
+                                                color: Colors.teal,
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18.0),
+                                          ),
+                                        ],
+                                      ),
+                                    )
+                                  ],
+                                ),
+                                Text(
+                                  "Change",
+                                  style: TextStyle(
+                                      color: Colors.teal,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 18.0),
+                                ),
+                              ],
+                            ),
+                          ),
+                          color: Colors.white,
+                        ),
+                        SizedBox(
+                          height: 20.0,
+                        ),
+                      ]),
+                    )))));
   }
 }
 
