@@ -2,14 +2,19 @@ import "package:flutter/material.dart";
 import "dart:ui";
 import "dart:math";
 
-void main() => runApp(MyApp());
 
-class MyApp extends StatelessWidget {
-    @override
-    Widget build(BuildContext context) {
-        return Vlutter();
-    }
+
+class AnimalInfo {
+
+  final String name;
+  final String age;
+
+  AnimalInfo (this.name, this.age);
 }
+
+
+
+
 
 final grey = Colors.grey[300];
 
@@ -21,7 +26,12 @@ class _VlutterState extends State<Vlutter> with SingleTickerProviderStateMixin {
     AnimationController animController;
     Animation animation;
     bool animationForward = true;
+        var animals = List<AnimalInfo>.generate(
+  5,
+  (i) =>  AnimalInfo("name $i", "$i"),
+);
 
+  
     final PageController pageController = PageController();
 
     @override
@@ -45,19 +55,26 @@ class _VlutterState extends State<Vlutter> with SingleTickerProviderStateMixin {
 
     @override
     Widget build(BuildContext context) {
+  
+
         return LayoutBuilder(
             builder: (context, constraints) {
-                return Directionality(
-                    textDirection: TextDirection.ltr,
-                    child: Container(
+ 
+                return MaterialApp(
+                 //   textDirection: TextDirection.ltr,
+                 
+               
+                    home: Container(
                         color: grey,
                         child: PageView(
                             scrollDirection: Axis.horizontal,
                             pageSnapping: true,
                             controller: pageController,
                             children: [
-                                DashboardCardPadded(animation: animation),
-                                DashboardCardPadded(animation: animation),
+                              AddCard() ,
+                              for (var i = 0; i < this.animals.length; i++)                          
+                                DashboardCardPadded(animation: animation ,animal : this.animals[i])
+                               
                             ],
                             onPageChanged: (pageIndex) {
                                 animController.reset();
@@ -72,16 +89,17 @@ class _VlutterState extends State<Vlutter> with SingleTickerProviderStateMixin {
 }
 
 class DashboardCardPadded extends AnimatedWidget {
-    DashboardCardPadded({Key key, Animation animation}) : super(key: key, listenable: animation);
+    DashboardCardPadded({Key key, Animation animation , this.animal}) : super(key: key, listenable: animation);
+
+    AnimalInfo animal;
 
     Animation get animation => listenable;
-
-    @override
+     @override
     Widget build(BuildContext context) {
         return ListView(
             children: [
                 SizedBox(height: 50),
-                DashboardCard(animation: animation),
+                DashboardCard(animation: animation , animal : animal ),
                 SizedBox(height: 15),
             ],
         );
@@ -90,8 +108,8 @@ class DashboardCardPadded extends AnimatedWidget {
 
 class DashboardCard extends AnimatedWidget {
 
-    DashboardCard({Key key, Animation animation}) : super(key: key, listenable: animation);
-
+    DashboardCard({Key key, Animation animation ,this.animal }) : super(key: key, listenable: animation);
+    AnimalInfo animal;
     Animation get animation => listenable;
 
     @override
@@ -103,7 +121,9 @@ class DashboardCard extends AnimatedWidget {
             endIndent: 15,
             thickness: 0.8,
         );
+       
 
+    
         return Stack(
             children: [
                 Container(
@@ -124,7 +144,7 @@ class DashboardCard extends AnimatedWidget {
                             child: Column(
                                 mainAxisAlignment: MainAxisAlignment.start,
                                 children: [
-                                    Text("1-0-1 füttern", style: TextStyle(
+                                    Text(this.animal.name, style: TextStyle(
                                         fontSize: 14,
                                         color: grey,
                                     )),
@@ -132,38 +152,12 @@ class DashboardCard extends AnimatedWidget {
                                     Row(
                                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                                         children: [
-                                            Thingy(percentage: 0.6, animation: animation),
-                                            Thingy(percentage: 0.7, animation: animation),
-                                            Thingy(percentage: 0.25, animation: animation),
+                                            Expanded(child: Thingy(percentage: 0.6, animation: animation)),
+                                            Expanded(child: Thingy(percentage: 0.7, animation: animation)),
+                                            Expanded(child: Thingy(percentage: 0.25, animation: animation)),
                                         ],
                                     ),
-                                    horizontalDivider,
-                                    Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                        children: [
-                                            Thingy(percentage: 0.3, animation: animation),
-                                            Thingy(percentage: 0.9, animation: animation),
-                                            Thingy(percentage: 1.0, animation: animation),
-                                        ],
-                                    ),
-                                    horizontalDivider,
-                                    Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                        children: [
-                                            Thingy(percentage: 0.3, animation: animation),
-                                            Thingy(percentage: 0.9, animation: animation),
-                                            Thingy(percentage: 1.0, animation: animation),
-                                        ],
-                                    ),
-                                    horizontalDivider,
-                                    Row(
-                                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                                        children: [
-                                            Thingy(percentage: 0.3, animation: animation),
-                                            Thingy(percentage: 0.9, animation: animation),
-                                            Thingy(percentage: 1.0, animation: animation),
-                                        ],
-                                    ),
+                                   
                                 ],
                             ),
                         ),
@@ -191,8 +185,8 @@ class DashboardCard extends AnimatedWidget {
 }
 
 class Thingy extends AnimatedWidget {
-    Thingy({Key key, this.percentage, Animation animation}) : super(key: key, listenable: animation);
-
+    Thingy({Key key, this.percentage, Animation animation , this.animal }) : super(key: key, listenable: animation);
+    AnimalInfo animal;
     Animation get animation => listenable;
     final double percentage;
 
@@ -217,8 +211,8 @@ class Thingy extends AnimatedWidget {
                   ),
                   Padding(
                       padding: EdgeInsets.only(top: 15),
-                      child: Text("Impfung", style: TextStyle(
-                          fontSize: 14,
+                      child: Text("Better than passport", style: TextStyle(
+                          fontSize: 8,
                           color: Colors.black,
                       )),
                   ),
@@ -226,6 +220,39 @@ class Thingy extends AnimatedWidget {
           ),
       );
     }
+}
+
+
+class AddCard extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+     return   Center(
+     child: Card(
+        child: Column(   
+          mainAxisSize: MainAxisSize.min,
+          children: <Widget>[
+            const ListTile(
+              leading: Icon(Icons.add_box),
+              title: Text('Add your animal'),
+              subtitle: Text("Add your animal's name and age"),
+            ),
+            ButtonTheme.bar(
+              child: ButtonBar(
+             
+                children: <Widget>[
+                  FlatButton(
+                    child: const Text('Add animal'),
+                    onPressed: () {/* ... */},
+                  ),
+                ],
+              ),
+            ),
+          ])
+    )
+   
+     );
+  }
+ 
 }
 
 class Arc extends CustomPainter {
@@ -248,4 +275,16 @@ class Arc extends CustomPainter {
 
     @override
     bool shouldRepaint(Arc oldDelegate) => true;
+}
+
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+    @override
+    Widget build(BuildContext context) {
+
+
+        return Vlutter();
+    }
 }
