@@ -9,7 +9,7 @@ void main() {
     theme: ThemeData(
       primaryColor: PrimaryColor,
     ),
-    initialRoute: '/',
+    initialRoute: '/dashboard',
     routes: {
       '/': (context) => LoginScreen(),
       '/dashboard': (context) => DashboardScreen()

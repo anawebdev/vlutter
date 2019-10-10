@@ -111,7 +111,6 @@ class DashboardCardPadded extends AnimatedWidget {
       : super(key: key, listenable: animation);
 
   AnimalInfo animal;
-
   Animation get animation => listenable;
   @override
   Widget build(BuildContext context) {
@@ -120,8 +119,47 @@ class DashboardCardPadded extends AnimatedWidget {
         SizedBox(height: 50),
         DashboardCard(animation: animation, animal: animal),
         SizedBox(height: 15),
+        BottomContainer(animal: animal)
       ],
     );
+  }
+}
+
+class BottomContainer extends StatelessWidget {
+  BottomContainer({Key key, this.animal}) : super(key: key);
+  AnimalInfo animal;
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        height: 64.0,
+        margin: const EdgeInsets.only(
+          left: 20,
+          right: 20,
+          bottom: 20,
+        ),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(8.0), color: Colors.white),
+        child: Row(
+          children: <Widget>[
+            Padding(
+              padding:
+                  EdgeInsets.only(top: 20, left: 30, right: 20, bottom: 20),
+              child: Image.asset("assets/icon/vaccination_danger.png",
+                  width: 30, height: 30),
+            ),
+            Expanded(
+                child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                Text('Aus liebe zu ' + this.animal.name,
+                    style: Theme.of(context).textTheme.title),
+                Text('Teste auf Wurmbefall',
+                    style: Theme.of(context).textTheme.display2),
+              ],
+            ))
+          ],
+        ));
   }
 }
 
@@ -133,7 +171,7 @@ class DashboardCard extends AnimatedWidget {
 
   @override
   Widget build(BuildContext context) {
-    const avatarSize = 150.0;
+    const avatarSize = 136.0;
 
     const horizontalDivider = Divider(
       indent: 15,
@@ -151,7 +189,7 @@ class DashboardCard extends AnimatedWidget {
             bottom: 0,
           ),
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(5.0),
+            borderRadius: BorderRadius.circular(8.0),
             color: Colors.white,
           ),
           child: Padding(
@@ -176,6 +214,7 @@ class DashboardCard extends AnimatedWidget {
                               Thingy(percentage: 0.25, animation: animation)),
                     ],
                   ),
+                  horizontalDivider,
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
