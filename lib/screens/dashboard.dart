@@ -15,7 +15,8 @@ class DashboardScreen extends StatefulWidget {
   _VlutterState createState() => _VlutterState();
 }
 
-class _VlutterState extends State<DashboardScreen> with SingleTickerProviderStateMixin {
+class _VlutterState extends State<DashboardScreen>
+    with SingleTickerProviderStateMixin {
   AnimationController animController;
   Animation animation;
   bool animationForward = true;
@@ -46,6 +47,7 @@ class _VlutterState extends State<DashboardScreen> with SingleTickerProviderStat
   }
 
   static const Charcoal = Color(0xFF484848);
+  static const SemiCharcoal = Color(0x66484848);
   static const OffWhite = Color(0xFFF4F4F4);
 
   @override
@@ -69,7 +71,7 @@ class _VlutterState extends State<DashboardScreen> with SingleTickerProviderStat
                 display2: TextStyle(
                     fontSize: 10.0,
                     fontWeight: FontWeight.bold,
-                    color: Charcoal),
+                    color: SemiCharcoal),
                 title: TextStyle(
                     fontSize: 14.0,
                     fontWeight: FontWeight.bold,
@@ -160,10 +162,7 @@ class DashboardCard extends AnimatedWidget {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(this.animal.name,
-                      style: TextStyle(
-                        fontSize: 14,
-                        color: grey,
-                      )),
+                      style: Theme.of(context).textTheme.title),
                   horizontalDivider,
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -287,6 +286,7 @@ class AddCard extends StatelessWidget {
 class Arc extends CustomPainter {
   double maxFill;
   double fill;
+  static const PrimaryColor = Color(0xFF49B2AE);
 
   Arc(this.maxFill, this.fill);
 
@@ -294,7 +294,7 @@ class Arc extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final rect = Offset.zero & size;
     final paint = Paint()
-      ..color = Colors.pink
+      ..color = (this.maxFill > 0.5) ? PrimaryColor : Colors.pink
       ..style = PaintingStyle.stroke
       ..strokeWidth = 3
       ..strokeCap = StrokeCap.round;
